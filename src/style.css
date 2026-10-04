@@ -1870,3 +1870,27 @@ textarea {
     scroll-behavior: auto !important;
   }
 }
+
+/* Privacy notice and policy */
+.privacy-links { display:flex; flex-wrap:wrap; align-items:center; gap:12px 24px; }
+.privacy-links button { border:0; background:none; color:inherit; font:inherit; cursor:pointer; padding:0; text-align:left; }
+.privacy-links a:hover,.privacy-links button:hover { text-decoration:underline; }
+.cookie-notice { position:fixed; z-index:90; bottom:20px; left:50%; transform:translateX(-50%); width:calc(100% - 32px); max-width:1120px; background:#fffef7; color:#20231f; border:1px solid #d9dacb; border-top:4px solid #f1ce25; border-radius:12px; box-shadow:0 8px 40px #0003; padding:22px 26px; display:flex; align-items:center; gap:28px; }
+.cookie-notice h2 { font-family:inherit; font-size:18px; line-height:1.3; margin:0 0 8px; letter-spacing:0; }
+.cookie-notice p { font-size:15px; line-height:1.6; margin:0; max-width:850px; }
+.cookie-notice a { text-decoration:underline; text-underline-offset:3px; font-weight:600; }
+.cookie-notice .button { flex-shrink:0; min-width:112px; background:#f1ce25; color:#20231f; }
+.privacy-notice-open .mobile-call { display:none; }
+.privacy-header { display:flex; align-items:center; justify-content:space-between; padding-top:24px; padding-bottom:24px; border-bottom:1px solid #d9dacb; }
+.privacy-brand { font-size:36px; font-weight:800; font-style:italic; }.privacy-brand span { color:#b59a00; }
+.privacy-page { max-width:900px; padding-top:40px; padding-bottom:64px; }
+.privacy-back { display:inline-block; margin-bottom:40px; font-size:16px; text-decoration:underline; text-underline-offset:4px; }
+.privacy-page h1 { font-family:'Barlow Condensed',sans-serif; font-size:clamp(40px,7vw,72px); line-height:1.08; margin:14px 0 24px; letter-spacing:-.02em; }
+.privacy-page .eyebrow { font-size:13px; }
+.privacy-intro { font-size:20px; line-height:1.6; color:#565d51; margin-bottom:40px; }
+.privacy-page section { border-top:1px solid #d9dacb; padding-top:26px; margin-top:30px; }
+.privacy-page section h2 { font-family:inherit; font-size:22px; line-height:1.35; letter-spacing:0; margin:0 0 14px; }
+.privacy-page section p,.privacy-page li { font-size:17px; line-height:1.8; }
+.privacy-page ul { padding-left:22px; margin-bottom:32px; }.privacy-page li a { text-decoration:underline; }
+.privacy-footer { display:flex; flex-wrap:wrap; justify-content:space-between; gap:24px; padding-top:28px; padding-bottom:40px; border-top:1px solid #d9dacb; font-size:15px; }
+@media(max-width:640px) { .cookie-notice { bottom:12px; padding:18px; gap:16px; flex-direction:column; align-items:stretch; max-height:65vh; overflow:auto; } .cookie-notice .button { width:100%; } .privacy-page { padding-top:28px; }.footer-bottom { gap:22px; }.privacy-page section h2 { font-size:21px; } }

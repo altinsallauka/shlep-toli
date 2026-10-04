@@ -19,6 +19,7 @@ import {
   Navigation,
 } from "lucide-react";
 import "./i18n";
+import { PrivacyLinks } from "./Privacy";
 import { updateMetadata, pathFor, basePath } from "./seo";
 const maps = "https://www.google.com/maps?cid=6100446268749439151";
 const facebook = "https://www.facebook.com/AutoTransportuesToli/";
@@ -639,6 +640,7 @@ export function App() {
           <span>
             © {new Date().getFullYear()} TOLI. {t("rights")}
           </span>
+          <PrivacyLinks />
           <a href="#home">{t("top")} ↑</a>
         </div>
       </footer>
