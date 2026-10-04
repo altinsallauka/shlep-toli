@@ -43,3 +43,7 @@ https://support.google.com/business/answer/7091
 ## GitHub Pages
 
 Publish from the `main` branch, `/docs` folder. Run `npm ci` and `npm run build`, the build automatically refreshes `docs/` and its `.nojekyll` file. Commit source and docs together. This repository can be managed through GitHub in the browser without changing the laptop’s work Git credentials.
+
+## Privacy notice and policy
+
+The footer links to `/shlep-toli/privacy/`, `/shlep-toli/en/privacy/`, and `/shlep-toli/de/privacy/`. These pages are prerendered and included in the sitemap. The dismissible bottom notice stores only `toli-privacy-notice-v1=acknowledged` in localStorage and can be reopened from the footer. No advertising or analytics cookies are installed. Fonts are self-hosted under `public/fonts` with their licenses. Privacy text lives in `src/privacy-content.ts`; components are in `src/Privacy.tsx`.
