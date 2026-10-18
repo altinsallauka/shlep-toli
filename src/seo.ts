@@ -1,5 +1,5 @@
-export const origin = "https://altinsallauka.github.io";
-export const basePath = "/shlep-toli";
+export const origin = "https://autobartjetoli.com";
+export const basePath = "";
 export const languages = ["sq", "en", "de"] as const;
 export const pathFor = (lang: string) => basePath + (lang === "sq" ? "/" : `/${lang}/`);
 export const metadata = {
