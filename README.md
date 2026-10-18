@@ -1,12 +1,12 @@
 # Shlep Auto Bartje TOLI
 
-Public site: https://altinsallauka.github.io/shlep-toli
+Public site: https://autobartjetoli.com
 
 React + TypeScript, Vite, i18next and Lucide. Run `npm install`, then `npm run dev`. Run `npm run build` for production and `npm run preview` to inspect it. Node 20.19+ recommended.
 
 ## Languages and SEO
 
-Albanian is the default at `/shlep-toli/`, English at `/shlep-toli/en/`, German at `/shlep-toli/de/`. Language links navigate to real URLs, and URL language always wins. Build generates full HTML for each language and hydrates it with React; crawlers and visitors receive the same content. Do not upload only the initial Vite build: `npm run build` also runs the prerender step.
+Albanian is the default at `/`, English at `/en/`, German at `/de/`. Language links navigate to real URLs, and URL language always wins. Build generates full HTML for each language and hydrates it with React; crawlers and visitors receive the same content. Do not upload only the initial Vite build: `npm run build` also runs the prerender step.
 
 Build produces self-referencing canonical tags, reciprocal hreflang and x-default links, localized titles/descriptions, Open Graph previews, AutomotiveBusiness/WebSite/WebPage JSON-LD, sitemap.xml, robots.txt and a noindex 404 page. Local FAQs cover towing, pricing factors, location and recovery without invented prices, rankings, reviews or coverage promises. New content: src/i18n.ts. SEO origin and metadata: src/seo.ts. HTML generation: scripts/prerender.mjs. Change origin when moving to a custom domain, rebuild and redirect the old domain.
 
@@ -46,4 +46,4 @@ Publish from the `main` branch, `/docs` folder. Run `npm ci` and `npm run build`
 
 ## Privacy notice and policy
 
-The footer links to `/shlep-toli/privacy/`, `/shlep-toli/en/privacy/`, and `/shlep-toli/de/privacy/`. These pages are prerendered and included in the sitemap. The dismissible bottom notice stores only `toli-privacy-notice-v1=acknowledged` in localStorage and can be reopened from the footer. No advertising or analytics cookies are installed. Fonts are self-hosted under `public/fonts` with their licenses. Privacy text lives in `src/privacy-content.ts`; components are in `src/Privacy.tsx`.
+The footer links to `/privacy/`, `/en/privacy/`, and `/de/privacy/`. These pages are prerendered and included in the sitemap. The dismissible bottom notice stores only `toli-privacy-notice-v1=acknowledged` in localStorage and can be reopened from the footer. No advertising or analytics cookies are installed. Fonts are self-hosted under `public/fonts` with their licenses. Privacy text lives in `src/privacy-content.ts`; components are in `src/Privacy.tsx`.
